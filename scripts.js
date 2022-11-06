@@ -47,6 +47,7 @@ window.addEventListener('load', locate)
 
 // Update ip info on form submit
 search.addEventListener('submit', locate)
+search.addEventListener('click', locate)
 
 
 
