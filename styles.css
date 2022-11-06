@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(images/pattern-bg.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Rubik', sans-serif;
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  gap:2rem;
+
+}
+
+.title {
+  color:white;
+}
+
+input {
+  padding:1rem;
+  border-radius: 1rem;
+  border:none;
+  width:40ch;
+}
+
+#search {
+  position:relative;
+  cursor:pointer;
+  display:flex;
+}
+#search::after {
+  content: '';
+  position:absolute;
+  right:0;
+  width:3rem;
+  height:100%;
+  border-radius: 0 1rem 1rem 0;
+  background:black;
+  background-image: url(images/icon-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+main {
+  background: white;
+  border-radius:1rem;
+  padding:1rem;
+  min-width:60vw;
+  display:flex;
+  box-shadow: 0px 10px 20px 0px grey;
+}
+
+section > h1 {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color:grey;
+  letter-spacing: 0.1rem;
+}
+
+section {
+  width:25%;
+  padding:1rem;
+}
+
+#map { 
+  height: 75vh; 
+  width:100vw; 
+  position:absolute; 
+  bottom:0; 
+  z-index:-1000;
+}
+
+@media only screen and (max-width:600px) {
+  main {
+    flex-direction: column;
+  }
+  input {
+    width:60vw;
+  }
+}

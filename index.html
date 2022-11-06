@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+     integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+     crossorigin="true"/>
+  <script src="scripts.js" defer></script>
+  <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+  integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+  crossorigin="true"></script>
+
+  <title>IP Address Tracker</title>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+
+</head>
+
+<body>
+<h1 class="title">IP Address Tracker</h1>
+
+<form id="search">
+  <label for="search-input"></label>
+  <input id="search-input" name="ipAddress" type="text" placeholder="Search for any IP address">
+</form>
+
+<main>
+  <section>
+    <h1>IP Address</h1>
+    <span id="ip-address">-<!-- ip --></span>
+  </section>
+  <hr>
+  <section>
+    <h1>Location</h1>
+    <span id="location">Toronto<!-- location --></span>
+  </section>
+  <hr>
+  <section>
+    <h1>Timezone</h1>
+    <span id="timezone">-04:00 UTC<!-- UTC offset --></span>
+  </section>
+  <hr>
+  <section>
+    <h1>ISP</h1>
+    <span id="isp">-<!-- ISP --></span>
+  </section>
+</main>
+
+<div id="map"><!-- Map --></div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="http://alekz.dev">Alekzandriia</a>.
+  </div>
+
+</body>
+</html>
